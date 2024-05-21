@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Content Over Background Image</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .background-container {
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/931/88/940/pencils-white-background-handle-colorful-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            overflow: hidden; /* Hide overflow to prevent scrolling of the background */
+            position: relative;
+        }
+
+        
+        
+        /* Adjust styles for better readability */
+        p {
+            margin: 0;
+        }
+
+        /* CSS for content-1 */
+        .content-1 {
+            position: absolute;
+            top: 0; /* Align content-1 to the top of the viewport */
+            left: 0; /* Align content-1 to the left of the viewport */
+            width: 100%; /* Occupy full width of the viewport */
+            height: 100%; /* Occupy full height of the viewport */
+            overflow-y: auto; /* Allow content-1 to scroll vertically */
+            background-image: url("https://c4.wallpaperflare.com/wallpaper/931/88/940/pencils-white-background-handle-colorful-wallpaper-preview.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 20px; /* Adjust padding as needed */
+            border-radius: 10px; /* Optional: Add some rounded corners */
+            box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+        }
+
+        .content-1 .inner-content {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        
+        <div class="content-1">
+            <div class="inner-content">
+                <h2>Section 1</h2>
+                <p>This is some content for section 1.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio soluta voluptas rerum nam, ex harum deleniti animi tempora nostrum ipsum facilis? Fuga assumenda qui molestiae iste quam minima. Voluptatibus, doloremque corporis perferendis distinctio molestias aspernatur nemo deleniti ab similique quisquam molestiae rem. Quis voluptatem illo blanditiis aut, ratione tenetur dolorum veritatis odit eaque eius. Minima, architecto quos? Nam sapiente officiis animi dolorum esse perspiciatis corrupti facere aliquam cupiditate veniam unde nostrum sunt, aspernatur, rem adipisci fuga? Cupiditate repudiandae, sequi repellat omnis recusandae dolore quas corrupti illo optio alias beatae assumenda adipisci harum. Et, inventore? Molestias enim ipsa beatae quaerat rem quam voluptatem maxime earum inventore laborum pariatur veniam vitae deserunt voluptate id tenetur ipsum, at voluptas mollitia similique velit sequi provident. Labore totam vero quisquam atque beatae corporis assumenda laudantium quis. Enim repudiandae consectetur et quae sint tenetur! Similique asperiores quisquam exercitationem minus optio minima ratione pariatur, porro soluta labore repellat totam quo tempora sed magnam provident veritatis atque eveniet ipsam est, alias praesentium magni possimus. Vero fugiat cumque error natus aut optio necessitatibus numquam. Vero quos perferendis tempore perspiciatis, illo dolore, fugit earum iste atque laborum nihil possimus numquam error reiciendis assumenda enim sit eaque corporis accusamus excepturi molestias?
+                </p>
+            </div>
+            
+            <div class="inner-content">
+                <h2>Section 3</h2>
+                <p>This is some content for section 3.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio soluta voluptas rerum nam, ex harum deleniti animi tempora nostrum ipsum facilis? Fuga assumenda qui molestiae iste quam minima. Voluptatibus, doloremque corporis perferendis distinctio molestias aspernatur nemo deleniti ab similique quisquam molestiae rem. Quis voluptatem illo blanditiis aut, ratione tenetur dolorum veritatis odit eaque eius. Minima, architecto quos? Nam sapiente officiis animi dolorum esse perspiciatis corrupti facere aliquam cupiditate veniam unde nostrum sunt, aspernatur, rem adipisci fuga? Cupiditate repudiandae, sequi repellat omnis recusandae dolore quas corrupti illo optio alias beatae assumenda adipisci harum. Et, inventore? Molestias enim ipsa beatae quaerat rem quam voluptatem maxime earum inventore laborum pariatur veniam vitae deserunt voluptate id tenetur ipsum, at voluptas mollitia similique velit sequi provident. Labore totam vero quisquam atque beatae corporis assumenda laudantium quis. Enim repudiandae consectetur et quae sint tenetur! Similique asperiores quisquam exercitationem minus optio minima ratione pariatur, porro soluta labore repellat totam quo tempora sed magnam provident veritatis atque eveniet ipsam est, alias praesentium magni possimus. Vero fugiat cumque error natus aut optio necessitatibus numquam. Vero quos perferendis tempore perspiciatis, illo dolore, fugit earum iste atque laborum nihil possimus numquam error reiciendis assumenda enim sit eaque corporis accusamus excepturi molestias?
+                </p>
+            </div>
+            <div class="inner-content">
+                <h2>Section 3</h2>
+                <p>This is some content for section 3.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio soluta voluptas rerum nam, ex harum deleniti animi tempora nostrum ipsum facilis? Fuga assumenda qui molestiae iste quam minima. Voluptatibus, doloremque corporis perferendis distinctio molestias aspernatur nemo deleniti ab similique quisquam molestiae rem. Quis voluptatem illo blanditiis aut, ratione tenetur dolorum veritatis odit eaque eius. Minima, architecto quos? Nam sapiente officiis animi dolorum esse perspiciatis corrupti facere aliquam cupiditate veniam unde nostrum sunt, aspernatur, rem adipisci fuga? Cupiditate repudiandae, sequi repellat omnis recusandae dolore quas corrupti illo optio alias beatae assumenda adipisci harum. Et, inventore? Molestias enim ipsa beatae quaerat rem quam voluptatem maxime earum inventore laborum pariatur veniam vitae deserunt voluptate id tenetur ipsum, at voluptas mollitia similique velit sequi provident. Labore totam vero quisquam atque beatae corporis assumenda laudantium quis. Enim repudiandae consectetur et quae sint tenetur! Similique asperiores quisquam exercitationem minus optio minima ratione pariatur, porro soluta labore repellat totam quo tempora sed magnam provident veritatis atque eveniet ipsam est, alias praesentium magni possimus. Vero fugiat cumque error natus aut optio necessitatibus numquam. Vero quos perferendis tempore perspiciatis, illo dolore, fugit earum iste atque laborum nihil possimus numquam error reiciendis assumenda enim sit eaque corporis accusamus excepturi molestias?
+                </p>
+            </div>
+            <div class="inner-content">
+                <h2>Section 3</h2>
+                <p>This is some content for section 3.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio soluta voluptas rerum nam, ex harum deleniti animi tempora nostrum ipsum facilis? Fuga assumenda qui molestiae iste quam minima. Voluptatibus, doloremque corporis perferendis distinctio molestias aspernatur nemo deleniti ab similique quisquam molestiae rem. Quis voluptatem illo blanditiis aut, ratione tenetur dolorum veritatis odit eaque eius. Minima, architecto quos? Nam sapiente officiis animi dolorum esse perspiciatis corrupti facere aliquam cupiditate veniam unde nostrum sunt, aspernatur, rem adipisci fuga? Cupiditate repudiandae, sequi repellat omnis recusandae dolore quas corrupti illo optio alias beatae assumenda adipisci harum. Et, inventore? Molestias enim ipsa beatae quaerat rem quam voluptatem maxime earum inventore laborum pariatur veniam vitae deserunt voluptate id tenetur ipsum, at voluptas mollitia similique velit sequi provident. Labore totam vero quisquam atque beatae corporis assumenda laudantium quis. Enim repudiandae consectetur et quae sint tenetur! Similique asperiores quisquam exercitationem minus optio minima ratione pariatur, porro soluta labore repellat totam quo tempora sed magnam provident veritatis atque eveniet ipsam est, alias praesentium magni possimus. Vero fugiat cumque error natus aut optio necessitatibus numquam. Vero quos perferendis tempore perspiciatis, illo dolore, fugit earum iste atque laborum nihil possimus numquam error reiciendis assumenda enim sit eaque corporis accusamus excepturi molestias?
+                </p>
+            </div>
+            <div class="inner-content">
+                <h2>Section 3</h2>
+                <p>This is some content for section 3.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio soluta voluptas rerum nam, ex harum deleniti animi tempora nostrum ipsum facilis? Fuga assumenda qui molestiae iste quam minima. Voluptatibus, doloremque corporis perferendis distinctio molestias aspernatur nemo deleniti ab similique quisquam molestiae rem. Quis voluptatem illo blanditiis aut, ratione tenetur dolorum veritatis odit eaque eius. Minima, architecto quos? Nam sapiente officiis animi dolorum esse perspiciatis corrupti facere aliquam cupiditate veniam unde nostrum sunt, aspernatur, rem adipisci fuga? Cupiditate repudiandae, sequi repellat omnis recusandae dolore quas corrupti illo optio alias beatae assumenda adipisci harum. Et, inventore? Molestias enim ipsa beatae quaerat rem quam voluptatem maxime earum inventore laborum pariatur veniam vitae deserunt voluptate id tenetur ipsum, at voluptas mollitia similique velit sequi provident. Labore totam vero quisquam atque beatae corporis assumenda laudantium quis. Enim repudiandae consectetur et quae sint tenetur! Similique asperiores quisquam exercitationem minus optio minima ratione pariatur, porro soluta labore repellat totam quo tempora sed magnam provident veritatis atque eveniet ipsam est, alias praesentium magni possimus. Vero fugiat cumque error natus aut optio necessitatibus numquam. Vero quos perferendis tempore perspiciatis, illo dolore, fugit earum iste atque laborum nihil possimus numquam error reiciendis assumenda enim sit eaque corporis accusamus excepturi molestias?
+                </p>
+            </div>
+            <div class="inner-content">
+                <h2>Section 3</h2>
+                <p>This is some content for section 3.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio soluta voluptas rerum nam, ex harum deleniti animi tempora nostrum ipsum facilis? Fuga assumenda qui molestiae iste quam minima. Voluptatibus, doloremque corporis perferendis distinctio molestias aspernatur nemo deleniti ab similique quisquam molestiae rem. Quis voluptatem illo blanditiis aut, ratione tenetur dolorum veritatis odit eaque eius. Minima, architecto quos? Nam sapiente officiis animi dolorum esse perspiciatis corrupti facere aliquam cupiditate veniam unde nostrum sunt, aspernatur, rem adipisci fuga? Cupiditate repudiandae, sequi repellat omnis recusandae dolore quas corrupti illo optio alias beatae assumenda adipisci harum. Et, inventore? Molestias enim ipsa beatae quaerat rem quam voluptatem maxime earum inventore laborum pariatur veniam vitae deserunt voluptate id tenetur ipsum, at voluptas mollitia similique velit sequi provident. Labore totam vero quisquam atque beatae corporis assumenda laudantium quis. Enim repudiandae consectetur et quae sint tenetur! Similique asperiores quisquam exercitationem minus optio minima ratione pariatur, porro soluta labore repellat totam quo tempora sed magnam provident veritatis atque eveniet ipsam est, alias praesentium magni possimus. Vero fugiat cumque error natus aut optio necessitatibus numquam. Vero quos perferendis tempore perspiciatis, illo dolore, fugit earum iste atque laborum nihil possimus numquam error reiciendis assumenda enim sit eaque corporis accusamus excepturi molestias?
+                </p>
+            </div>
+         </div>
+    </div>
+    
+</body>
+</html>
